@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Forwarded Cases</title>
+	<link rel="stylesheet" th:href="@{/css/forwardedcaseCSS.css}">
+</head>
+
+<body>
+
+	<h2>Forwarded Cases</h2>
+
+	<div class="table-container">
+		<table id="casesTable">
+			<thead>
+				<tr>
+					<th>SQ Case ID</th>
+					<th>Reference No.</th>
+					<th>Association Name</th>
+					<th>State</th>
+					<th>Chief Functionary</th>
+					<th>Email</th>
+					<th>Generation Date</th>
+					<th>Status</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- Data will be inserted dynamically -->
+			</tbody>
+		</table>
+	</div>
+
+	<script th:src="@{/js/forwardedcasesJS.js}"></script>
+
+</body>
+
+</html>

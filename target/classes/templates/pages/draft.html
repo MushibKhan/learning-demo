@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Draft</title>
+
+	<!-- TinyMCE -->
+	<script th:src="@{/js/tinymce/tinymce.min.js}"></script>
+
+	<!-- External CSS -->
+	<link rel="stylesheet" th:href="@{/css/draftCSS.css}">
+</head>
+
+<body>
+
+	<select id="moduleSelect">
+		<option value="">Select Module</option>
+		<option value="HR">HR</option>
+		<option value="FINANCE">FINANCE</option>
+		<option value="SALES">SALES</option>
+	</select>
+
+	<br><br>
+
+	<div class="editor-container">
+		<div id="editorWrapper">
+			<textarea id="editor"></textarea>
+		</div>
+		<div id="previousDrafts">
+			<strong>Previous Drafts:</strong>
+			<div><i>No drafts yet</i></div>
+		</div>
+	</div>
+
+	<div id="draftDetails">
+		<strong>Draft Details:</strong>
+		<div><i>Select a draft to view details</i></div>
+	</div>
+
+	<br>
+	<button id="saveBtn">Save</button>
+
+	<!-- External JS -->
+	<script th:src="@{/js/draftJS.js}"></script>
+
+</body>
+
+</html>

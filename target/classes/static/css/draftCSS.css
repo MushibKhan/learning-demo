@@ -1,0 +1,38 @@
+.editor-container {
+	display: flex;
+	gap: 20px;
+}
+
+#editorWrapper {
+	flex: 2;
+}
+
+#previousDrafts {
+	flex: 1;
+	border: 1px solid #ccc;
+	padding: 10px;
+	height: 400px;
+	overflow-y: auto;
+	background-color: #f9f9f9;
+}
+
+#previousDrafts div {
+	border-bottom: 1px dashed #aaa;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+
+#draftDetails {
+	border: 1px solid #ccc;
+	padding: 10px;
+	height: 200px;
+	overflow-y: auto;
+	background-color: #eef;
+	margin-top: 20px;
+}
+
+.draft-link {
+	cursor: pointer;
+	color: blue;
+	text-decoration: underline;
+}
