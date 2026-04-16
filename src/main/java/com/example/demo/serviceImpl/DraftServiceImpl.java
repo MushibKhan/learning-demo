@@ -24,6 +24,7 @@ public class DraftServiceImpl implements DraftService {
 	private final EntryRepository entryRepo;
 	private final MasterRepository masterRepo;
 
+/**This method is for to fetch all the drafts */
 	@Override
 	public List<DraftResponse> getAllDrafts(String searchValue) {
 
